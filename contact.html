@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Thomson's Auto Body Repair</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-info-section h3 {
+            color: #f5b042;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e6f0;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item strong {
+            color: #1e2a3e;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #f5b042;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #0a1c2f;
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            background: #f5f7fb;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1e2a3e;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e6f0;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #f5b042;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: #f5b042;
+            color: #0a1c2f;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: #f0a835;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(245, 176, 66, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loader"><div class="spinner"></div></div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.svg" alt="Thomson's Auto Body Repair Logo">
+                <div class="logo-text">
+                    <h1>Thomson's</h1>
+                    <p>Auto Body Repair</p>
+                </div>
+            </a>
+            
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="button">🔍</button>
+                </div>
+            </div>
+            
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with Thomson's Auto Body Repair</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">We'd Love to Hear From You</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: #666;">
+                Have questions about our services or need a quote? Contact us today and let us help you with your vehicle repair needs.
+            </p>
+
+            <div class="contact-container">
+                <div class="contact-grid">
+                    <div class="contact-info-section">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <strong>Address</strong>
+                            <p>25A King Street<br>Ladybrand</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Phone</strong>
+                            <a href="tel:0824342357">082 434 2357</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:admin@thomsonsauto.co.za">admin@thomsonsauto.co.za</a><br>
+                            <a href="mailto:thomsonsauto@telkomsa.net">thomsonsauto@telkomsa.net</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Business Hours</strong>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: 9:00 AM - 1:00 PM<br>
+                            Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 style="color: #f5b042; margin-bottom: 1.5rem; font-size: 1.3rem;">Send us a Message</h3>
+                        <form class="contact-form" onsubmit="handleSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+
+                            <button type="submit" class="form-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Thomson's Auto Body Repair</h4>
+                    <p>Professional vehicle body repair and restoration services in Ladybrand.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Address: 25A King Street, Ladybrand</p>
+                    <p>Phone: <a href="tel:0824342357">082 434 2357</a></p>
+                    <p>Email: <a href="mailto:admin@thomsonsauto.co.za">admin@thomsonsauto.co.za</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="projects.html">Projects</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Thomson's Auto Body Repair. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:admin@thomsonsauto.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`)}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
